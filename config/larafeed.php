@@ -36,7 +36,21 @@ return [
     | Package name, the name of the package to be displayed on the frontend etc.
     |
     */
+
     'name' => env('LARAFEED_NAME', 'Larafeed'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Pagination
+    |--------------------------------------------------------------------------
+    |
+    | Controls how many items display per page.
+    |
+    */
+
+    'pagination'  => '6',
+
+    'entry_count' => '5',
 
     /*
     |--------------------------------------------------------------------------
@@ -46,6 +60,7 @@ return [
     | The package comes with a default icon, but this can be overridden here.
     |
     */
+
     'favicon' => '/vendor/larafeed/icons/favicon.ico',
 
     /*
@@ -82,7 +97,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Accepted Types & Additional Feed/Entry Types
+    | Accepted Types
     |--------------------------------------------------------------------------
     |
     | These are the types of feed that are allowed in our feed reader service. 
